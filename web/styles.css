@@ -155,11 +155,16 @@ a[href] {
     color: #333;
 }
 
+.main-nav__mobile {
+    display: none;
+}
+
 /* Home */
 .home-slider__item {
     background-image: url('https://flone.reactdemo.hasthemes.com/assets/img/slider/slider-25.jpg');
     height: 100vh;
-    width: 100%;
+    background-position: center; /* center the image */
+    background-size: cover;
     position: relative;
 }
 

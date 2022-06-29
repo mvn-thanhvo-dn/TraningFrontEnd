@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+[data-tooltip]::before {
+    content: attr(data-tooltip);
+    margin-right: 10px;
+}
+
+h1 {
+    margin-left: calc(10px + 10%);
+}
+
+.rgb {
+    width: 100px;
+    height: 30px;
+    background-color: rgb(0, 0, 0);
+}
+
+.rgba {
+    width: 100px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.rotate {
+    margin: 20px 0;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(0, 0, 0);
+    transform: rotate(72deg);
+}
+
+.translate {
+    width: 100px;
+    height: 30px;
+    background-color: rgb(0, 0, 0);
+    transform: translate(10px, 20px);
+}
+
+.gradient {
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(#23c1a9, #488aee);
+}
