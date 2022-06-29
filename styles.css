@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a[href] {
+    color: #333;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #a749ff;
+    cursor: pointer;
+}
+
+#go-to-top {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: #a749ff;
+    color: #fff;
+    font-size: 16px;
+}
+
+.wide {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn {
+    border-radius: 30px;
+    padding: 16px 56px;
+}
+
+.btn:hover {
+
+}
+
+.btn-transparent {
+    color: transparent;
+    border: 1px #fff solid;
+}
+
+.top-nav-container {
+    border-bottom: 1px solid #d5d4d4;
+}
+
+.top-nav {
+    display: flex;
+    align-items: center;
+    height: 52px;
+    font-size: 14px;
+}
+
+.top-nav__item {
+    line-height: 52px;
+    position: relative;
+}
+
+.top-nav__item + .top-nav__item:not(:last-child) {
+    margin-left: 50px;
+}
+
+.top-nav__item-pagination::before {
+    position: absolute;
+    top: 47%;
+    right: -27px;
+    width: 1px;
+    height: 15px;
+    content: '';
+    transform: translateY(-50%);
+    background-color: #d5d4d4;
+}
+
+.icon-drop-down {
+    margin-left: 8px;
+}
+
+.top-nav__item-right {
+    margin-left: auto;
+}
+
+.item-right-currency {
+    color: #ff1c1c;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+}
+
+.main-nav__logo {
+    object-fit: contain;
+    height: 26px;
+}
+
+.main-nav__list {
+    display: flex;
+}
+
+.main-nav__item {
+    line-height: 90px;
+    padding: 0 15px;
+    font-size: 15px;
+}
+
+.main-nav__tool {
+    display: flex;
+}
+
+.main-nav__tool-item {
+    padding: 1px 6px;
+}
+
+.main-nav__tool-item + .main-nav__tool-item {
+    margin-left: 8px;
+}
+
+.main-nav__tool-icon {
+    font-size: 23px;
+    color: #333;
+}
+
+/* Home */
+.home-slider__item {
+    background-image: url('https://flone.reactdemo.hasthemes.com/assets/img/slider/slider-25.jpg');
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.home-content {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: 400;
+}
+
+.home-content__title {
+    font-size: 24px;
+}
+
+.home-content__main {
+    font-size: 72px;
+}
+
+.home-content__btn {
+    font-size: 16px;
+}
+
+.home-content > .btn {
+    display: inline-block;
+    margin-top: 20px;
+}
