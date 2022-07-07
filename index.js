@@ -45,20 +45,16 @@ class Shape {
 }
 
 // 8
-function showMessAfterTimeout(who, timeout) {
+function showMessAfterTimeout(msg, who, timeout) {
     return new Promise((resolve, reject) => {
         return setTimeout(() => {
-            return resolve(`Hi ${who}!`);
+            return resolve(`${msg} Hi ${who}!`);
         }, timeout);
     });
 }
-showMessAfterTimeout('Foo', 100)
-    .then((msg1) => {
-        return showMessAfterTimeout('Bar', 200).then((msg) => {
-            return msg1 + ' ' + msg;
-        });
-    })
-    .then((msg) => console.log(`Finish after 300ms: ${msg}`));
+showMessAfterTimeout('', 'Foo', 100)
+    .then((msg) => showMessAfterTimeout(msg, 'Bar', 200))
+    .then((msg) => console.log(`Finish after 300ms:${msg}`));
 
 // 9
 const arr = [1, 2, 3, 4, 5];

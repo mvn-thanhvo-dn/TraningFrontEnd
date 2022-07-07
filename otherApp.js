@@ -1,4 +1,4 @@
-import Utils from './lib/utils';
+import { Utils } from './lib/utils.js';
 
 const sum = Utils.sum;
 const pi = Utils.pi;
