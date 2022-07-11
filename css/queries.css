@@ -1,0 +1,83 @@
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+    /* ------------------------- form -------------------------- */
+    .table {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    /* ------------------------- index -------------------------- */
+    .btn-update {
+        margin: 0;
+    }
+    /* ------------------------- form -------------------------- */
+    .table {
+        width: 100%;
+    }
+
+    .form-control {
+        width: 350px;
+    }
+
+    select.form-control {
+        width: 362px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* ------------------------- index -------------------------- */
+    .sidebar {
+        display: none;
+    }
+
+    .tbl-content {
+        height: 60vh;
+    }
+
+    .th-img {
+        display: none;
+    }
+
+    .table-header__link span {
+        display: none;
+    }
+
+    .table-header__link i {
+        font-size: 20px;
+    }
+    /* ------------------------- form -------------------------- */
+}
+
+@media only screen and (max-width: 480px) {
+    /* ------------------------- index -------------------------- */
+    .main-right__heading {
+        flex-wrap: wrap;
+    }
+
+    .main-right__title {
+        margin: 0 auto 5px auto;
+    }
+
+    .main-right__search {
+        margin: 0 auto;
+    }
+    /* ------------------------- form -------------------------- */
+    
+    .table tbody tr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-control {
+        width: 95%;
+    }
+
+    textarea.form-control {
+        height: 150px;
+    }
+
+    select.form-control {
+        width: 98%;
+
+    }
+}
