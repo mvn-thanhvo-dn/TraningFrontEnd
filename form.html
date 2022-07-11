@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final exercise</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/queries.css">
+</head>
+
+<body>
+    <div class="root">
+        <nav class="main-nav">
+            <div class="nav-item">
+                <a href="/" class="nav-item__link nav-item__logo">LOGO</a>
+            </div>
+            <div class="nav-item nav-more">
+                <span class="nav-item__link nav-item__link-account">
+                    <img src="./img/avatar.jpg" alt="avatar" class="nav-item__img">
+                    Admin
+                    <i class="nav-item__icon-down fas fa-sort-down"></i>
+                </span>
+                <ul class="subnav">
+                    <li class="subnav-item">
+                        <a href="#" class="subnav-item__link">Tài khoản</a>
+                    </li>
+                    <li class="subnav-item">
+                        <a href="#" class="subnav-item__link">Đăng xuất</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main class="main">
+            <nav class="sidebar">
+                <ul class="sidebar-list">
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-item__link">
+                            <i class="fas fa-home sidebar-item__icon"></i>
+                            Trang chủ
+                        </a>
+                    </li>
+                    <li class="sidebar-item active">
+                        <a href="/index.html" class="sidebar-item__link">
+                            <i class="fa-solid fa-laptop sidebar-item__icon"></i>
+                            Quản lí sản phẩm
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-item__link">
+                            <i class="fas fa-user-alt sidebar-item__icon"></i>
+                            Quản lí tài khoản
+                        </a>
+                    </li>
+                </ul>
+                <div class="sidebar-info">
+                    <a href="#" class="sidebar-info__link">Giới thiệu</a>
+                    <a href="#" class="sidebar-info__link">Liên hệ với chúng tôi</a>
+                    <span class="sidebar-info__license">&copy; 2022 jThanh8144</span>
+                </div>
+            </nav>
+
+            <div class="main-right">
+                <div class="main-right__heading">
+                    <span class="main-right__title">Thêm sản phẩm</span>
+                </div>
+                <div class="main-right__content">
+                    <form action="" id="form">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <th class="th">Mã sản phẩm</th>
+                                    <td>
+                                        <input type="text" name="product_code" class="form-control" value="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="th">Tên sản phẩm</th>
+                                    <td>
+                                        <input type="text" name="name" class="form-control" value="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="th">Thông số sản phẩm</th>
+                                    <td>
+                                        <textarea name="description" class="form-control" id="" cols="30"
+                                            rows="10"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="th">Giá sản phẩm</th>
+                                    <td><input type="number" name="price" class="form-control" value=""></td>
+                                </tr>
+                                <tr>
+                                    <th class="th">Hãng</th>
+                                    <td>
+                                        <select name="brand" class="form-control">
+                                            <option value="">-- Chọn hãng --</option>
+                                            <option value="1">Acer</option>
+                                            <option value="2">Apple</option>
+                                            <option value="3">Asus</option>
+                                            <option value="4">Dell</option>
+                                            <option value="5">Hp</option>
+                                            <option value="7">LG</option>
+                                            <option value="8">Philips</option>
+                                            <option value="9">Msi</option>
+                                            <option value="10">Lenovo</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="form-submit">
+                                        <input type="submit" class="btn btn-submit" value="Thêm sản phẩm">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="./js/general.js"></script>
+    <script src="./js/form.js"></script>
+</body>
+
+</html>

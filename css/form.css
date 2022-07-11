@@ -1,0 +1,47 @@
+.main-right__content {
+    overflow: scroll;
+    height: 550px;
+}
+
+.table {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.table > tbody > tr {
+    display: block;
+    padding: 5px 0;
+}
+
+.th {
+    width: 300px;
+    text-align: left;
+}
+
+.form-control {
+    height: 30px;
+    width: 500px;
+    display: block;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #b3b3b3;
+    font-size: 14px;
+}
+
+textarea.form-control {
+    height: 200px;
+}
+
+select.form-control {
+    width: 510px;
+    height: 40px;
+}
+
+.form-submit {
+    display: flex;
+    justify-content: center;
+}
+
+textarea {
+    font-family: 'Roboto', sans-serif;
+}
